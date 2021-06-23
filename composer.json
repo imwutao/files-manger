@@ -1,0 +1,29 @@
+{
+    "name": "wutao/files-manger",
+    "description": "files manger",
+    "type": "library",
+    "keywords": ["wutao", "extension"],
+    "homepage": "https://github.com/wutao/files-manger",
+    "license": "MIT",
+    "authors": [{
+        "name": "coding",
+        "email": "356300546@qq.com"
+    }],
+    "require": {
+        "php": ">=7.1.0|^8.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DcatAdmin\\FilesManger\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "DcatAdmin\\FilesManger\\FilesMangerServiceProvider",
+        "laravel": {
+            "providers": [
+                "DcatAdmin\\FilesManger\\FilesMangerServiceProvider"
+            ]
+        }
+    }
+}
